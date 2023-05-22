@@ -1,0 +1,17 @@
+:root, .theme-root {
+  &[theme=solarized-light] {
+    --bg0: #fdf6e3;
+    --bg1: #fdf6e3;
+    --bg2: #fdf6e3;
+    --bg3: #f4edda;
+
+    @mixin apply-color($name, $base) {
+      --k-color-#{$name}: #{$base};
+      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+    }
+  
+    @include apply-color(active, #2aa198);
+  }
+}

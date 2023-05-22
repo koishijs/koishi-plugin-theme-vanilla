@@ -1,0 +1,17 @@
+:root, .theme-root {
+  &[theme=coffee-dark] {
+    --bg1: #231F1E;
+    --bg2: #231F1E;
+    --bg3: #292423;
+    --bg4: #50403b;
+
+    @mixin apply-color($name, $base) {
+      --k-color-#{$name}: #{$base};
+      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+    }
+  
+    @include apply-color(active, #F09176);
+  }
+}

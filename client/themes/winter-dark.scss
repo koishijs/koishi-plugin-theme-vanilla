@@ -1,0 +1,19 @@
+:root, .theme-root {
+  &[theme=winter-dark] {
+    --bg1: #021627;
+    --bg2: #021627;
+    --bg3: #021627;
+    --bg4: #021627;
+  
+    --k-color-border: #5f7e97;
+
+    @mixin apply-color($name, $base) {
+      --k-color-#{$name}: #{$base};
+      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+    }
+  
+    @include apply-color(active, #1FA0D5);
+  }
+}
