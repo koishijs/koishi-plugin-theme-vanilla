@@ -1,0 +1,24 @@
+:root, .theme-root {
+  &[theme=ocean-light] {
+    --bg1: #E8F7F7;
+    --bg2: #E2F4F4;
+    --bg3: #DBF2F1;
+    --bg4: #D4EFEF;
+
+    --k-card-bg: var(--bg1);
+    --k-main-bg: var(--bg2);
+    --k-side-bg: var(--bg3);
+    --k-activity-bg: var(--bg4);
+
+    --k-color-divider: #A9DEDF;
+
+    @mixin apply-color($name, $base) {
+      --k-color-#{$name}: #{$base};
+      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+    }
+  
+    @include apply-color(active, #00B2A6);
+  }
+}

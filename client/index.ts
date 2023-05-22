@@ -19,6 +19,16 @@ export default function (ctx: Context) {
   })
 
   ctx.theme({
+    id: 'ocean-dark',
+    name: 'Ocean Dark',
+  })
+
+  ctx.theme({
+    id: 'ocean-light',
+    name: 'Ocean Light',
+  })
+
+  ctx.theme({
     id: 'solarized-dark',
     name: 'Solarized Dark',
   })

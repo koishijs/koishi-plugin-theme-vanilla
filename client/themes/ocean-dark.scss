@@ -1,0 +1,21 @@
+:root, .theme-root {
+  &[theme=ocean-dark] {
+    --bg1: #16252D;
+    --bg2: #172830;
+    --bg3: #1A2B34;
+    --bg4: #284450;
+
+    --k-text-active: var(--k-color-active);
+
+    --k-color-border: #101A20;
+
+    @mixin apply-color($name, $base) {
+      --k-color-#{$name}: #{$base};
+      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+    }
+  
+    @include apply-color(active, #97C892);
+  }
+}
