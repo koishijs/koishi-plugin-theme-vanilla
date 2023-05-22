@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-theme-vanilla",
   "description": "Vanilla themes for Koishi console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -32,7 +32,7 @@
   "koishi": {
     "description": {
       "en": "Vanilla themes for Koishi console",
-      "zh": "多种不同风格的 Koishi 控制台主题"
+      "zh": "多种不同风格的简单控制台主题"
     },
     "services": {
       "required": [
@@ -41,12 +41,12 @@
     }
   },
   "peerDependencies": {
-    "@koishijs/plugin-console": "^5.9.0",
+    "@koishijs/plugin-console": "^5.9.1",
     "koishi": "^4.8.3"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.9.0",
-    "@koishijs/plugin-console": "^5.9.0",
+    "@koishijs/client": "^5.9.1",
+    "@koishijs/plugin-console": "^5.9.1",
     "@types/node": "^18.16.13",
     "esbuild": "^0.14.54",
     "esbuild-register": "^3.4.2",

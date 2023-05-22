@@ -1,9 +1,17 @@
 :root, .theme-root {
   &[theme=solarized-light] {
-    --bg0: #fdf6e3;
-    --bg1: #fdf6e3;
+    --bg0: #FEF9ED;
+    --bg1: #FEF9ED;
     --bg2: #fdf6e3;
     --bg3: #f4edda;
+
+    --k-card-bg: var(--bg1);
+    --k-main-bg: var(--bg1);
+    --k-side-bg: var(--bg3);
+    --k-page-bg: var(--bg3);
+    --k-activity-bg: var(--bg3);
+
+    --k-color-divider: #DCD3B7;
 
     @mixin apply-color($name, $base) {
       --k-color-#{$name}: #{$base};

@@ -1,17 +1,16 @@
 :root, .theme-root {
-  &[theme=dream-dark] {
-    --bg1: #252839;
-    --bg2: #2A2D3E;
-    --bg3: #31364A;
-  
-    --k-card-bg: var(--bg2);
-    --k-main-bg: var(--bg2);
-    --k-side-bg: var(--bg1);
-    --k-page-bg: var(--bg1);
-    --k-hover-bg: #212534;
-    --k-activity-bg: var(--bg1);
+  &[theme=coffee-light] {
+    --bg1: #EEE9E7;
+    --bg2: #EAE4E1;
+    --bg3: #E6DFDC;
+    --bg4: #E3DBD6;
 
-    --k-color-divisor: #2F3243;
+    --k-card-bg: var(--bg1);
+    --k-main-bg: var(--bg2);
+    --k-side-bg: var(--bg3);
+    --k-activity-bg: var(--bg4);
+
+    --k-color-divider: #CABCB4;
 
     @mixin apply-color($name, $base) {
       --k-color-#{$name}: #{$base};
@@ -20,6 +19,6 @@
       --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
     }
   
-    @include apply-color(active, #7D57C2);
+    @include apply-color(active, #D26A4C);
   }
 }

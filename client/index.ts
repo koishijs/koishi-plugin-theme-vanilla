@@ -9,8 +9,13 @@ export default function (ctx: Context) {
   })
 
   ctx.theme({
-    id: 'dream-dark',
-    name: 'Dream Dark',
+    id: 'coffee-light',
+    name: 'Coffee Light',
+  })
+
+  ctx.theme({
+    id: 'pale-night-dark',
+    name: 'Pale Night',
   })
 
   ctx.theme({

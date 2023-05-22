@@ -1,9 +1,13 @@
 :root, .theme-root {
   &[theme=coffee-dark] {
     --bg1: #231F1E;
-    --bg2: #231F1E;
+    --bg2: #262120;
     --bg3: #292423;
     --bg4: #50403b;
+
+    --k-text-active: var(--k-color-active);
+
+    --k-color-border: #181615;
 
     @mixin apply-color($name, $base) {
       --k-color-#{$name}: #{$base};
