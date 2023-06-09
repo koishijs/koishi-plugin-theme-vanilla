@@ -15,11 +15,11 @@
 
     @mixin apply-color($name, $base) {
       --k-color-#{$name}: #{$base};
-      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
-      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
+      --k-color-#{$name}-shade: #{mix($base, #000, 90%)};
+      --k-color-#{$name}-tint: #{mix($base, #fff, 80%)};
       --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
     }
   
-    @include apply-color(active, #2aa198);
+    @include apply-color(primary, #2aa198);
   }
 }

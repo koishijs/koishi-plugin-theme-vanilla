@@ -20,6 +20,6 @@
       --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
     }
   
-    @include apply-color(active, #7D57C2);
+    @include apply-color(primary, #7D57C2);
   }
 }

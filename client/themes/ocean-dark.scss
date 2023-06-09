@@ -5,7 +5,7 @@
     --bg3: #1A2B34;
     --bg4: #284450;
 
-    --k-text-active: var(--k-color-active);
+    --k-text-active: var(--k-color-primary);
 
     --k-color-border: #101A20;
 
@@ -16,6 +16,6 @@
       --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
     }
   
-    @include apply-color(active, #97C892);
+    @include apply-color(primary, #97C892);
   }
 }
