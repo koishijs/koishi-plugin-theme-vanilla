@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 :root, .theme-root {
   &[theme=pale-night-dark] {
     --bg1: #252839;
@@ -15,9 +17,9 @@
 
     @mixin apply-color($name, $base) {
       --k-color-#{$name}: #{$base};
-      --k-color-#{$name}-shade: #{mix($base, #000, 80%)};
-      --k-color-#{$name}-tint: #{mix($base, #fff, 90%)};
-      --k-color-#{$name}-fade: #{fade-out($base, 0.9)};
+      --k-color-#{$name}-shade: #{color.mix($base, #000, 80%)};
+      --k-color-#{$name}-tint: #{color.mix($base, #fff, 90%)};
+      --k-color-#{$name}-fade: #{color.adjust($base, $alpha: -0.9)};
     }
   
     @include apply-color(primary, #7D57C2);
